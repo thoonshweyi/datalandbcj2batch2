@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+:root{
+    --primary-color : darkviolet;
+    --secondary : darkblue;
+    --primary-grad : linear-gradient(to left,darkviolet,deepskyblue);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Start Header Section */
+header{
+    height: 80vh;
+    background: var(--primary-grad);
+
+    position: relative;
+}
+/* Start header intro */
+.headerinfos{
+    background-color: var(--primary-color);
+    color: #fff;
+    display: none;
+}
+@media (min-width:1200px) {
+    .visiblelgs{
+        display: block;
+    }
+}
+.infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 15px 0;
+}
+.headerinfos a{
+    color: #fff;
+    margin: 0 10px;
+}
+/* End header intro */
+
+/* Start Navbar */
+.menustyles li a{
+    color: #000;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+
+    transition: color 0.6;
+}
+.menustyles li a:hover{
+    color: var(--primary-color);
+}
+.navbuttons{
+    border: 0;
+}
+.navbuttons:focus{
+    box-shadow: none;
+}
+.lines1,.lines2,.lines3{
+    width: 20px;
+    height: 2px;
+    margin: 3px;
+}
+.crossxs .lines1{
+    transform: translateY(5px) rotate(45deg);
+
+}
+.crossxs .lines2{
+    opacity: 0;
+}
+.crossxs .lines3{
+    transform: translateY(-5px) rotate(-45deg);
+}
+/* End Navbar */
+
+/* Start Banner */
+.banners{
+    width: 90%;
+    /* background-color: skyblue; */
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.bannerheader{
+    animation-name: bannerani;
+    animation-duration: 2s;
+}
+.bannerparagraphs,.banner-btns{
+    animation-name: bannerani;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+@keyframes bannerani {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* End Banner */
+.studentgroups{
+    width: 40%;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.waves{
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/* End Header Section */
+
+/* Start Student Counter Section */
+.counteritems{
+    width: 25%;
+    border-right: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    float: left;
+}
+.counteritems:last-child{
+    border-right: 0;
+}
+.counteritems .fas{
+    background: var(--primary-grad);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.counteritems h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+/* End Student Counter Section */
