@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 :root{
     --primary-color : darkviolet;
-    --secondary : darkblue;
+    --secondary-color : darkblue;
     --primary-grad : linear-gradient(to left,darkviolet,deepskyblue);
 }
 *{
@@ -129,6 +129,9 @@ header{
 /* End Header Section */
 
 /* Start Student Counter Section */
+.counters{
+    height: 20vh;
+}
 .counteritems{
     width: 25%;
     border-right: 1px solid #ccc;
@@ -152,3 +155,65 @@ header{
     font-weight: bold;
 }
 /* End Student Counter Section */
+
+/* Start Aboutus Section */
+.aboutuss{
+    background: 
+    linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ),url('../assets/img/banner/banner4.jpg');
+    background-size: cover;
+}
+.aboutuss ul li{
+    list-style-type: none;
+    background-color: var(--secondary-color);
+    margin: 20px 0;
+}
+/* End Aboutus Section */
+
+/* Start Faculties Section */
+.faculties{
+    background-color: var(--secondary-color);
+}
+.flip-cards{
+    width: 300px;
+    height: 300px;
+
+    perspective: 1000px;
+}
+.flip-card-inners{
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+
+    transform: rotateY(-45deg) scale(0.7);
+
+    transform-style: preserve-3d;
+
+    transition: transform 0.6s;
+}
+.flip-cards:hover .flip-card-inners{
+    transform: rotateY(180deg);
+}
+.flip-card-fronts,.flip-card-backs{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.flip-card-backs{
+    background-color:steelblue;
+    transform: rotateY(180deg);
+}
+.socialicons a{
+    color: #fff;
+    border: 1px solid #f4f4f4;
+    padding: 5px;
+    margin: 0 10px;
+}
+/* End Faculties Section */
