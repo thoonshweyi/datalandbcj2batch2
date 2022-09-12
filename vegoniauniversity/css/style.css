@@ -320,3 +320,79 @@ nav{
     color: #fff;
 }
 /* End Location Area Section */
+
+/* Start Features Section */
+.features{
+    background-color: var(--secondary-color);
+}
+.feas img{
+    transform: rotateY(0deg) scale(0.5);
+    transition: transform 0.5s;
+}
+.feas:hover img{
+    transform: rotateY(1turn) scale(1);
+}
+.feas p{
+    font-size: 12px;
+}
+/* End Features Section */
+
+/* Start Rating Section */
+.headings{
+    font-size: 25px;
+    margin-right: 25px;
+}
+.fa-star{
+    font-size: 25px;
+}
+.fills{
+    color: orange;
+}
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lefts{
+    width: 20%;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+.middles{
+    width: 60%;
+    margin-bottom: 10px;
+}
+.rights{
+    width: 20%;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.bars-container{
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.bars-1{
+    width: 60%;
+    height: 18px;
+    background-color: green;
+}
+.bars-2{
+    width: 30%;
+    height: 18px;
+    background-color: blue;
+}
+.bars-3{
+    width: 10%;
+    height: 18px;
+    background-color: skyblue;
+}
+.bars-4{
+    width: 5%;
+    height: 18px;
+    background-color: orange;
+}
+.bars-5{
+    width: 15%;
+    height: 18px;
+    background-color: red;
+}
+/* End Rating Section */
