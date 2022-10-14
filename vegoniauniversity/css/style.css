@@ -396,3 +396,264 @@ nav{
     background-color: red;
 }
 /* End Rating Section */
+
+/* Start Subscribe Section */
+.subscribes{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url('../assets/img/etc/student1.png');
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+@media (max-width : 992px){
+    .subscribes{
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2));
+        /* background-position: 90%; */
+    }
+}
+/* @media (max-width : 1200px) {
+    .subscribes{
+        background-position: 90%;
+    }
+} */
+
+.input-group-text{
+    background-color: royalblue;
+    color: #fff;
+}
+.squareares{
+    position: relative;
+
+    overflow: hidden;
+
+}
+.sqboxes{
+    width: 100%;
+    height: 100%;
+}
+.square{
+    width: 70px;
+    height: 70px;
+    background-color: #f2f2f2;
+
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+
+    animation: sqani 3s infinite ease-in-out;
+}
+
+@keyframes sqani{
+    0%{
+        bottom: -100px;
+    }
+    100%{
+        bottom: 100%;
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+}
+
+.square:nth-child(1){
+    width: 70px;
+    height: 70px;
+    left: 7%;
+
+    animation-delay: 41s;
+}
+.square:nth-child(2){
+    width: 65px;
+    height: 65px;
+    left: 15%;
+
+    animation-delay: 4s;
+}
+.square:nth-child(3){
+    width: 82px;
+    height: 82px;
+    left: 45%;
+
+    animation-delay: 8s;
+}
+.square:nth-child(4){
+    width: 70px;
+    height: 70px;
+    left: 55%;
+
+    animation-delay: 2s;
+}
+.square:nth-child(5){
+    width: 60px;
+    height: 60px;
+    left: 67%;
+
+    animation-delay: 6s;
+}
+.square:nth-child(6){
+    width: 55px;
+    height: 55px;
+    left: 27%;
+
+    animation-delay: 4s;
+}
+.square:nth-child(7){
+    width: 90px;
+    height: 90px;
+    left: 85%;
+
+    animation-delay: 9s;
+}
+.square:nth-child(8){
+    width: 70px;
+    height: 70px;
+    left: 75%;
+
+    animation-delay: 4s;
+}
+.square:nth-child(9){
+    width: 45px;
+    height: 45px;
+    left: 10%;
+
+    animation-delay: 4s;
+}
+.square:nth-child(10){
+    width: 55px;
+    height: 55px;
+    left: 63%;
+
+    animation-delay: 2s;
+}
+/* End Subscrive Section */
+
+/* Start Footer Section */
+.footerlinks{
+    color: #eee;
+    font-size: 13px;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+.footerlinks:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+    letter-spacing: 1px;
+}
+.footersocialicons a{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #f4f4f4;
+    border-radius: 50%;
+    color: #fff;
+
+    text-align: center;
+    line-height: 30px;
+
+    margin: 0 2px;
+}
+.footersocialicons a:hover{
+    background-color: blue;
+}
+.backtotop-btn{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+.backtotop-btn:hover{
+    background-color: #555;
+}
+/* End Footer Section */
+
+/* Start Stick Note */
+.sticknotes a{
+    width: 100px;
+    background-color: steelblue;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+
+    padding: 15px;
+
+    position: fixed;
+    left: -80px;
+
+    z-index: 100;
+
+    transition: left 0.3s;
+}
+.sticknotes a:hover{
+    left: 0;
+}
+.sticknotes .aboutus{
+    background-color: green;
+
+    top: 200px;
+}
+.sticknotes .pages{
+    background-color: sky;
+
+    top: 260px;
+}
+.sticknotes .news{
+    background-color: tomato;
+
+    top: 320px;
+}
+.sticknotes .contact{
+    background-color: grey;
+
+    top: 380px;
+}
+/* End Stick Note */
+
+/* Start Login Box */
+.open-btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #555;
+    border-radius: 50%;
+    color: #fff;
+
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+
+    opacity: 0.8;
+
+    z-index: 10;
+}
+.open-btn:hover{
+    opacity: 1;
+}
+.form-popup{
+    background-color: #fff;
+    border: 3px solid #f1f1f1;
+    
+    position: fixed;
+    right: 15px;
+    bottom: 50px;
+
+    z-index: 100;
+
+    display: none;
+
+    transition: all 0.3s;
+}
+.form-container{
+    width: 300px;
+    padding: 10px;
+}
+.form-group input[type=email],.form-group input[type=password]{
+    width: 100%;
+    background-color: #f1f1f1;
+    border: none;
+
+    padding: 15px;
+    margin: 10px 0;
+}
+.form-group input[type=email]:focus,.form-group input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+/* End Login Box */

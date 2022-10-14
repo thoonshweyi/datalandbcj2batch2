@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+/* Start Header Section */
+header{
+    height: 60vh;
+    background-image: linear-gradient(steelblue,lightskyblue);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+
+/* Start Nav Bar */
+.navbar{
+    background: linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,0.5));
+}
+.nav-link{
+    font-size: 16px;
+    /* color: #fff; */
+    color: #fff !important;
+}
+/* End Nav Bar */
+
+/* Start Banner Section */
+.banners{
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* End Banner Section */
+
+/* End Header Section */
+
